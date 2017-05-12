@@ -4,6 +4,7 @@ var ObjMasterDiv=document.querySelector('#list');
 var ObjDetailDiv=document.querySelector('#charview');
 //kiirandó adatok listája
 var tobeDisplayed=["name","height","mass","hair_color","skin_color","eye_color","birth_year","gender"];
+var tobeDisplayed2=["Name","Height","Mass","Hair color","Skin color","Eye color","Birth year","Gender"];
 
 var DataMaster=[];
 
@@ -46,7 +47,7 @@ function DisplayDetails(incomingID){
     for(var j=0;j<tobeDisplayed.length;j++){
         var Row=document.createElement("TR");
         var DataX=document.createElement("TD");
-        DataX.innerHTML=tobeDisplayed[j];
+        DataX.innerHTML=tobeDisplayed2[j];
         var Data=document.createElement("TD");
         Data.classList.add("swDataTD");
         DataX.classList.add("swDataTD");
