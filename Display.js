@@ -20,7 +20,7 @@ function DisplayMaster(){
     for(var i=0;i<StarWars.length;i++){
         DataMaster.push(' ');
         var Row=document.createElement("TR");
-        var DataMaster[i]=document.createElement("TD");
+        DataMaster[i]=document.createElement("TD");
         DataMaster[i].innerHTML=StarWars[i].name;
         DataMaster[i].setAttribute('id',i);
         DataMaster[i].addEventListener(click,function(event){
