@@ -18,6 +18,7 @@ window.onload=DisplayMaster(StarWars);
 
 function DisplayMaster(StarWars){
     strippedData();
+        ObjMasterDiv.innerHTML=' ';
         var Table=document.createElement("TABLE");
         for(var i=0;i<StarWars.length;i++){
             DataMaster.push(' ');
