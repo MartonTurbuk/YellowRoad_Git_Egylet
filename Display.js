@@ -15,6 +15,7 @@ function IdGenerator(){
 }
 
 //Master oldal megjelenítés, táblázat, for ciklusra kilistázza külön sorokba a name értékeket
+//GYURI ezt a függvényt hívd meg body onload-dal!!
 function DisplayMaster(){
         strippedData();
         var Table=document.createElement("TABLE");
