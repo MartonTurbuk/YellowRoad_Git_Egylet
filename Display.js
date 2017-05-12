@@ -26,7 +26,7 @@ function DisplayMaster(){
         DataMaster[i].addEventListener(click,function(event){
             DisplayDetails(event.target.id);
         })
-        Row.appendChild(Data);
+        Row.appendChild(DataMaster[i]);
         Table.appendChild(Row);
     }
     ObjMasterDiv.appendChild(Table);
