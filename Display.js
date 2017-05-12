@@ -13,11 +13,9 @@ function IdGenerator(){
         StarWars[i].id=i;
     }
 }
-
 //Master oldal megjelenítés, táblázat, for ciklusra kilistázza külön sorokba a name értékeket
-//GYURI ezt a függvényt hívd meg body onload-dal!!
-function DisplayMaster(){
-        strippedData();
+window.onload=function(){
+    strippedData();
         var Table=document.createElement("TABLE");
         for(var i=0;i<StarWars.length;i++){
             DataMaster.push(' ');
@@ -33,6 +31,7 @@ function DisplayMaster(){
         }
         ObjMasterDiv.appendChild(Table);
 }
+
 
 // a tobeDisplayed tömbbe írt adatokat listázza ki
 function DisplayDetails(incomingID){
