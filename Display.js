@@ -14,8 +14,11 @@ function IdGenerator(){
     }
 }
 //Master oldal megjelenítés, táblázat, for ciklusra kilistázza külön sorokba a name értékeket
-window.onload=function(){
+window.onload=DisplayMaster(StarWars);
+
+function DisplayMaster(StarWars){
     strippedData();
+        ObjMasterDiv.innerHTML=' ';
         var Table=document.createElement("TABLE");
         for(var i=0;i<StarWars.length;i++){
             DataMaster.push(' ');
