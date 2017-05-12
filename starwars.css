@@ -4,6 +4,16 @@ body{
 div{
     border:1px solid black;
 }
-.swNames{
-    background:yellow;
+.swNamesTD{
+    color:yellow;
+}
+.swDataTD{
+    color:blue;
+}
+.swNamesTD:hover{
+    color:orange;
+    font-weight:bold;
+    cursor:pointer;
+    font-size:20px;
+    transition:all 0.3s;
 }
