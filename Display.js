@@ -14,6 +14,7 @@ function IdGenerator(){
         StarWars[i].id=i;
     }
 }
+
 //Master oldal megjelenítés, táblázat, for ciklusra kilistázza külön sorokba a name értékeket
 window.onload=DisplayMaster(StarWars);
 
@@ -29,7 +30,7 @@ function DisplayMaster(StarWars){
             Row.classList.add("swNamesTR");
             DataMaster[i].innerHTML=StarWars[i].name;
             DataMaster[i].setAttribute('id',i);
-            DataMaster[i].setAttribute('currentList',StarWars);
+            DataMaster[i].currentList=StarWars;
             DataMaster[i].addEventListener('click',function(event){
                 DisplayDetails(event.target.id,event.target.currentList);
             })
