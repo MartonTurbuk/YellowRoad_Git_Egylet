@@ -1,2 +1,8 @@
 proba
 Added line by Turbuk Márton.
+Master-detailes projekttípus,
+bal oldalon csak a neve jobb oldalon a használható infók.
+feladatok Andris megjelenítés,
+Marci ojjektum,+sorbarendezés,
+Gyuri html ,
+Manó css meg a maradék
