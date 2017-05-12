@@ -3,17 +3,18 @@
     src: url(Starjedi.ttf);
 }
 body{
+    background-size:100%;
     font-family: myFirstFont;
-    background:black;
+    padding:100px;
 }
-div{
-    border:1px solid black;
-}
+/*div{
+    border:1px solid white;
+}*/
 .swNamesTD{
     color:yellow;
 }
 .swDataTD{
-    color:blue;
+    color:yellow;
 }
 .swNamesTD:hover{
     color:orange;
@@ -21,4 +22,11 @@ div{
     cursor:pointer;
     font-size:20px;
     transition:all 0.3s;
+}
+.container div{
+    display:inline-block;
+}
+.charview{
+    top:100px;
+    float:right;
 }
