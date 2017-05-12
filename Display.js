@@ -14,15 +14,17 @@ function IdGenerator(){
     }
 }
 //Master oldal megjelenítés, táblázat, for ciklusra kilistázza külön sorokba a name értékeket
-window.onload=function(){
+window.onload=DisplayMaster(StarWars);
+
+function DisplayMaster(StarWars){
     strippedData();
         var Table=document.createElement("TABLE");
         for(var i=0;i<StarWars.length;i++){
             DataMaster.push(' ');
             var Row=document.createElement("TR");
             DataMaster[i]=document.createElement("TD");
-            DataMaster[i].classList.add=("swNamesTD");
-            Row.classList.add=("swNamesTR");
+            DataMaster[i].classList.add("swNamesTD");
+            Row.classList.add("swNamesTR");
             DataMaster[i].innerHTML=StarWars[i].name;
             DataMaster[i].setAttribute('id',i);
             DataMaster[i].addEventListener('click',function(event){
@@ -45,9 +47,9 @@ function DisplayDetails(incomingID){
         var DataX=document.createElement("TD");
         DataX.innerHTML=tobeDisplayed[j];
         var Data=document.createElement("TD");
-        Data.classList.add=("swDataTD");
-        DataX.classList.add=("swDataTD");
-        Row.classList.add=("swDataTR");
+        Data.classList.add("swDataTD");
+        DataX.classList.add("swDataTD");
+        Row.classList.add("swDataTR");
         Data.innerHTML=StarWars[incomingID][tobeDisplayed[j]];
         Row.appendChild(DataX);
         Row.appendChild(Data);
