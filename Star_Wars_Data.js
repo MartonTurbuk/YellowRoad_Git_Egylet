@@ -40,7 +40,7 @@ var StarWarsFull =
     "skin_color": "gold",
     "eye_color": "yellow",
     "birth_year": "112BBY",
-    "gender": "n/a",
+    "gender": "droid",
     "homeworld": "http://swapi.co/api/planets/1/",
     "films": [
       "http://swapi.co/api/films/2/",
@@ -67,7 +67,7 @@ var StarWarsFull =
     "skin_color": "white, blue",
     "eye_color": "red",
     "birth_year": "33BBY",
-    "gender": "n/a",
+    "gender": "droid",
     "homeworld": "http://swapi.co/api/planets/8/",
     "films": [
       "http://swapi.co/api/films/2/",
@@ -198,7 +198,7 @@ var StarWarsFull =
     "skin_color": "white, red",
     "eye_color": "red",
     "birth_year": "unknown",
-    "gender": "n/a",
+    "gender": "droid",
     "homeworld": "http://swapi.co/api/planets/1/",
     "films": [
       "http://swapi.co/api/films/1/"
