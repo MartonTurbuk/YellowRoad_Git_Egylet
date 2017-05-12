@@ -1,3 +1,4 @@
+var StarWarsFull =
 [
   {
     "name": "Luke Skywalker",
@@ -270,4 +271,24 @@
     "edited": "2014-12-20T21:17:50.325000Z",
     "url": "http://swapi.co/api/people/10/"
   }
-]
+];
+
+var StarWars = [];
+/*Gyuri megoldás map függvény*/
+
+function strippedData() {
+  StarWars = StarWarsFull.map(Tomorito);
+}
+
+function Tomorito(currentElement) {
+  var ujElement = {};
+  ujElement.name = currentElement.name;
+  ujElement.height = currentElement.height;
+  ujElement.mass = currentElement.mass;
+  ujElement.hair_color = currentElement.hair_color;
+  ujElement.skin_color = currentElement.skin_color;
+  ujElement.eye_color = currentElement.eye_color;
+  ujElement.birth_year = currentElement.birth_year;
+  ujElement.gender = currentElement.gender;
+  return ujElement;
+}
