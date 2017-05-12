@@ -287,8 +287,10 @@ function Tomorito(currentElement) {
   ujElement.mass = currentElement.mass;
   ujElement.hair_color = currentElement.hair_color;
   ujElement.skin_color = currentElement.skin_color;
-  ujElement.eye_color = currentElement.eye_color;
+  ujElement.eye_coslor = currentElement.eye_color;
   ujElement.birth_year = currentElement.birth_year;
   ujElement.gender = currentElement.gender;
   return ujElement;
 }
+
+strippedData();
