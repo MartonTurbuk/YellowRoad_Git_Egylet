@@ -12,6 +12,7 @@ function IdGenerator(){
 }
 
 function DisplayMaster(){
+    
     var Table=document.createElement("TABLE");
     for(var i=0;i<StarWarsFull.length;i++){
         var Row=document.createElement("TR");
@@ -24,15 +25,14 @@ function DisplayMaster(){
 }
 
 function DisplayDetails(){
+    var oncklickValue=event.target.value;
     var Table=document.createElement("TABLE");
-    for(var i=0;i<StarWars.length;i++){
-        var Row=document.createElement("TR");
-        for(var j=0;j<tobeDisplayed.length;j++){
-            var Data=document.createElement("TD");
-            Data.innerHTML=StarWarsFull[i][tobeDisplayed[j]];
-            Row.appendChild(Data);
-        }
-        Table.appendChild(Row);
+    var Row=document.createElement("TR");
+    for(var j=0;j<tobeDisplayed.length;j++){
+        var Data=document.createElement("TD");
+        Data.innerHTML=StarWarsFull[oncklickValue][tobeDisplayed[j]];
+        Row.appendChild(Data);
     }
+    Table.appendChild(Row);
     ObjDetailDiv.appendChild(Table);
 }
