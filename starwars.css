@@ -10,17 +10,22 @@ body{
 /*div{
     border:1px solid white;
 }*/
-.swNamesTD{
-    color:yellow;
+label{
+    color:white;
+    padding:2px;
+    margin:10px;
+    border-radius:5px;
+    background:blue;
 }
-.swDataTD{
+.swNamesTD,.swDataTD{
     color:yellow;
+    font-size:30px;
 }
 .swNamesTD:hover{
     color:orange;
     font-weight:bold;
     cursor:pointer;
-    font-size:20px;
+    font-size:50px;
     transition:all 0.3s;
 }
 .container div{
