@@ -30,8 +30,8 @@ function DisplayDetails(){
         for(var j=0;j<tobeDisplayed.length;j++){
             var Data=document.createElement("TD");
             Data.innerHTML=StarWars[i][tobeDisplayed[j]];
+            Row.appendChild(Data);
         }
-        Row.appendChild(Data);
         Table.appendChild(Row);
     }
     ObjMasterDiv.appendChild(Table);
