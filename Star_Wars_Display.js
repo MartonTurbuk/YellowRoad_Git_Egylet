@@ -1,6 +1,6 @@
 
-var ObjMasterDiv=document.querySelector('#');
-var ObjDetailDiv
+var ObjMasterDiv=document.querySelector('#list');
+var ObjDetailDiv=document.querySelector('#charview');
 //StarWars
 var tobeDisplayed=["name","height","mass","hair_color","skin_color","eye_color","birth_year","gender"];
 
@@ -34,5 +34,5 @@ function DisplayDetails(){
         Row.appendChild(Data);
         Table.appendChild(Row);
     }
-    ObjMasterDiv.appendChild(Table);
+    ObjDetailDiv.appendChild(Table);
 }
