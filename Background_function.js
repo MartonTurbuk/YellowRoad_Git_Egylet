@@ -10,7 +10,6 @@ function nevSorbaRendez(a, b) {
   }
   return 0;
 }
-StarWars.sort(nevSorbaRendez);
 
 /*Karakterek magasság szerinti sorba rendezése, növekvő értékekkel*/
 StarWars.sort(function(a, b) {
@@ -32,6 +31,7 @@ StarWars.sort(function(a, b) {
   return b.mass - a.mass;
 });
 
+<<<<<<< HEAD
 /*Karakterek csoportosítása nem szerint*/
 
 
@@ -57,6 +57,8 @@ for (var i = 0; i < StarWars.length; i++) {
 }*/
 
 
+=======
+>>>>>>> 7263737cadf9e437220e327ee7c722337de8ff63
 /*General függvény, nem csoportosításra*/
 function generalFilterFunction(array, gender) {
   var sortedByGender = [];
@@ -68,6 +70,7 @@ function generalFilterFunction(array, gender) {
   return sortedByGender;
 }
 
+<<<<<<< HEAD
 /*generalFilterFunction(StarWars, 'male');*/
 
 
@@ -75,6 +78,11 @@ function generalFilterFunction(array, gender) {
 var checkboxDiv = document.querySelector('#checkboxDiv');
 checkboxDiv.addEventListener('click', checkboxSelect);
 
+=======
+var checkboxDiv = document.querySelector('#checkboxDiv');
+checkboxDiv.addEventListener('click', checkboxSelect);
+//listázza a csekkolt 1nemeket'
+>>>>>>> 7263737cadf9e437220e327ee7c722337de8ff63
 function checkboxSelect() {
   var filteredArray = [];
   var male = document.querySelector('#Male');

@@ -14,6 +14,7 @@ function IdGenerator(){
         StarWars[i].id=i;
     }
 }
+
 //Master oldal megjelenítés, táblázat, for ciklusra kilistázza külön sorokba a name értékeket
 window.onload=DisplayMaster(StarWars);
 
@@ -29,8 +30,9 @@ function DisplayMaster(StarWars){
             Row.classList.add("swNamesTR");
             DataMaster[i].innerHTML=StarWars[i].name;
             DataMaster[i].setAttribute('id',i);
+            DataMaster[i].currentList=StarWars;
             DataMaster[i].addEventListener('click',function(event){
-                DisplayDetails(event.target.id);
+                DisplayDetails(event.target.id,event.target.currentList);
             })
             Row.appendChild(DataMaster[i]);
             Table.appendChild(Row);
@@ -40,7 +42,7 @@ function DisplayMaster(StarWars){
 
 
 // a tobeDisplayed tömbbe írt adatokat listázza ki
-function DisplayDetails(incomingID){
+function DisplayDetails(incomingID,StarWars){
     ObjDetailDiv.innerHTML=" ";
     var Table=document.createElement("TABLE");
     
@@ -60,3 +62,4 @@ function DisplayDetails(incomingID){
     
     ObjDetailDiv.appendChild(Table);
 }
+

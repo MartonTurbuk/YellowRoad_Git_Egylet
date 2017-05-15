@@ -1,5 +1,35 @@
 body{
+<<<<<<< HEAD
     background:lime;
+=======
+    background-size:100%;
+    font-family: myFirstFont;
+    padding:100px;
+}
+/*div{
+    border:1px solid white;
+}*/
+label{
+    color:white;
+    padding:2px;
+    margin:10px;
+    border-radius:5px;
+    background:blue;
+}
+.swNamesTD,.swDataTD{
+    color:yellow;
+    font-size:30px;
+}
+.swNamesTD:hover{
+    color:orange;
+    font-weight:bold;
+    cursor:pointer;
+    font-size:50px;
+    transition:all 0.3s;
+}
+.container div{
+    display:inline-block;
+>>>>>>> 7263737cadf9e437220e327ee7c722337de8ff63
 }
 div{
     border:1px solid black;
